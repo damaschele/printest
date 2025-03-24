@@ -11,7 +11,7 @@ import aaee.ac.backend.service.UserService;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {"http://localhost:1420", "http://192.168.0.101"})
 public class UserController {
     
     private final UserService userService;
